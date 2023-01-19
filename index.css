@@ -83,11 +83,14 @@ label{
 	border: 1px solid #ccc;
 	padding: .7em;
 	width: 100%;
+	/*margin-bottom: .7em;*/
+
 }
 
 .campo-medio{
 	display: inline-block;
 	padding-right: .5em;
+	
 }
 
 .grupo{
@@ -104,9 +107,9 @@ button{
 	cursor: pointer;
 	margin: 0;
 	margin-top: -3px;
-	color: #fff;
-	background-color:#0c8cd3;
-	border-color: #04324c;
+	color: rgb(6, 4, 4);
+	background-color:#e07acd;
+	border-color: #030304;
 	width: 20%;
     display: block;
     clear: both;
