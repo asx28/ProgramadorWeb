@@ -1,5 +1,6 @@
 var campoFiltro = document.querySelector("#filtrar-tabela");
 
+
 //console.log(campoFiltro);
 campoFiltro.addEventListener("input", function(){
     console.log(this.value);
@@ -9,8 +10,9 @@ campoFiltro.addEventListener("input", function(){
 
     for(var i=0; i<clientes.length; i++){
         var nome = clientes[i].querySelector(".info-nome").textContent;
-
-        if (nome != this.value){
+        var expressao = new RegExp(this.value, 'i');
+        
+        if (!expressao.test(nome)){
             clientes[i].classList.add("invisivel");
         }else{
             clientes[i].classList.remove("invisivel");
