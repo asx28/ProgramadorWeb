@@ -59,3 +59,11 @@ function montaTd(dado, classe){
 
     return td;
 }
+
+function adicionaPacienteNaTabela(paciente){
+    var pacienteTr = montaTr(paciente);
+
+    //6 - Anexar a linha <tr> na tabela <tbory> existente
+    var tabela = document.querySelector("#tabela-pacientes");
+    tabela.appendChild(pacienteTr);
+}
